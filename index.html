@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электроника</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Электроника и Гаджеты</h1>
+        <nav>
+            <a href="#smartphones">Смартфоны</a>
+            <a href="#laptops">Ноутбуки</a>
+            <a href="#gadgets">Гаджеты</a>
+            <a href="#consoles">Игровые приставки</a>
+        </nav>
+    </header>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Сменить тему</button>
+
+    <section id="smartphones" class="content-section">
+        <h2>Смартфоны</h2>
+        <p>Смартфоны - это многофункциональные устройства, объединяющие телефон, камеру и компьютер в одном.</p>
+        <button class="info-button" onclick="showDetails('smartphone')">Подробнее</button>
+    </section>
+
+    <section id="laptops" class="content-section">
+        <h2>Ноутбуки</h2>
+        <p>Ноутбуки сочетают высокую производительность с мобильностью. Идеальны для работы и учебы.</p>
+        <button class="info-button" onclick="showDetails('laptop')">Подробнее</button>
+    </section>
+
+    <section id="gadgets" class="content-section">
+        <h2>Гаджеты</h2>
+        <p>Гаджеты делают нашу жизнь проще и удобнее. Включают умные часы, фитнес-браслеты и многое другое.</p>
+        <button class="info-button" onclick="showDetails('gadget')">Подробнее</button>
+    </section>
+
+    <section id="consoles" class="content-section">
+        <h2>Игровые приставки</h2>
+        <p>Игровые приставки предлагают увлекательный опыт с невероятной графикой и множеством игр для любого возраста.</p>
+        <button class="info-button" onclick="showDetails('console')">Подробнее</button>
+    </section>
+
+    <div id="modal" class="modal" onclick="closeModal(event)">
+        <div id="modal-content-container" class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
